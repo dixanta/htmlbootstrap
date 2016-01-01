@@ -1,0 +1,25 @@
+<script>
+
+function getRange(start,end){
+for(var i=start;i<=end;i++){
+ document.write('<option value="'+i+'">'+i + "</option>");
+}	
+}
+
+</script>
+
+<select  name="year">
+<option value="">YYYY</option>
+<script>
+var date=new Date();
+getRange(1900,date.getFullYear());
+</script>
+</select>
+<select  name="month">
+<option value="">MM</option>
+<script>
+getRange(1,12);
+</script>
+</select>
+
+
