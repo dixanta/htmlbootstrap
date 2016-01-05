@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>	
+</head>
+<body>
+<div class="container">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">
+        Leapfrog Academy
+      </a>
+    </div>
+  </div>
+</nav>
+<h1>Courses</h1>
+	<div class="pull-right">
+		<p>
+				<a href="add.html" class="btn btn-primary btn-xs" title="Add Course">
+				<span class="glyphicon glyphicon-plus"></span>
+				</a>	
+		</p>
+	</div>
+	<table class="table table-bordered table-hover table-striped">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Fees</th>
+			<th>Duration</th>
+			<th>Status</th>
+			<th>Action</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Core Java & Web Fundamentals</td>
+			<td>12000</td>
+			<td>6 Weeks</td>
+			<td>Running</td>
+			<td>
+				<a href="" class="btn btn-success btn-xs" title="Edit Course" data-toggle="modal" data-target="#myModal">
+				<span class="glyphicon glyphicon-pencil"></span>
+				</a>
+				<a href="" class="btn btn-danger btn-xs" title="Delete Course"><span class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete ?')"></span></a>
+			</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Advanced Java (JEE)</td>
+			<td>20000</td>
+			<td>8 Weeks</td>
+			<td>Running</td>
+			<td>
+				<a href="" class="btn btn-success btn-xs" title="Edit Course" data-toggle="modal" data-target="#myModal">
+				<span class="glyphicon glyphicon-pencil"></span>
+				</a>
+				<a href="" class="btn btn-danger btn-xs" title="Delete Course"><span class="glyphicon glyphicon-trash" onclick="return confirm('Are you sure to delete ?')"></span></a>
+			</td>
+		</tr>		
+	</table>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>
